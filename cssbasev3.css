@@ -49,17 +49,13 @@
 body {
 	font-family:'caviar_dreamsregular', 'Century Gothic';
 	color:black;
-	font-size: 0.9em;
-	width:100%;
-	height:100%;
-	 -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	font-size: 1em;
 }
 
-body a {
-	color:#53626e;
-}
+.bloc-page { 
+	width: 1200px;
+	margin:auto;
+ }
 
 /**Header**/
 
@@ -79,13 +75,6 @@ header h1{
 	vertical-align: top;
 }
 
-header img {
-	position:absolute;
-	right:8px;
-	top:40px;
-	max-height: 100%;
-	max-width: 100%;
-}
 
 
 /**navigation**/
@@ -110,25 +99,19 @@ nav a:hover /**liens survolés**/ {
 }
 
 
-nav ul {
+.nav-ul {
 	list-style-type: none;
 }
 
-nav ul li {
+.nav-li {
 	display: inline-block;
 	margin-right:15px;
 }
 
-.design3 {
-	float:center;
-	width:100%;
-	margin-bottom: 20px;
-}
+
+
 /**body**/
 
-main {
-	clear:both;
-}
 
 main h1  {
 	font-size:1.5em;
@@ -141,17 +124,10 @@ main h1  {
 	margin:auto;
 }
 
-.competences ul {
-	list-style: none;
-	padding-left: 20px;
-	padding-right: 20px;
+.puce-mkt {
+	list-style: url('images/puce2.png') outside;
+	list-style-position: 15px 5px;
 }
-
-.competences li {
-	background:url('images/puce2.png') no-repeat;
-	padding-left:25px;
-	background-size: 20px;
-}	
 
 main h2 {
 	text-decoration:underline;
@@ -159,44 +135,44 @@ main h2 {
 	text-align:center;
 }
 
-.competences  {
+.mkt-com {
 	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	vertical-align: top;
-	justify-content: center;
-	align-items: center;
-	width:1200px;
-	margin : 0 auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	
 }
 
-.element {
+/**.marketing, .communication {
+	text-align: justify;
 	width:500px;
+	border:4px solid #788efe;
+	border-radius: 10px;
+	vertical-align: top;
+	padding-right:10px;
+	padding-left: :10px;
+	padding-top: 0px;
 	margin:auto;
-	border:3px solid #788efe;
-	height: 220px;
-	margin-bottom:40px;
-	border-radius:20px;
-	
+	margin-top:40px;
+	margin-bottom: 40px;
+**/
 }
 
-/**
-.element:nth-child(2) {
-	order:3;
-	align-self:flex-end;
-	height: 150px;
+/**.formation, .commercial {
+	text-align: justify;
+	width:500px;
+	border:4px solid #788efe;
+	border-radius: 10px;
+	vertical-align: top;
+	padding-right:10px;
+	padding-left: :10px;
+	padding-top: 0px;
+	margin:auto;
+	margin-top:40px;
+	margin-bottom: 40px;
 }
 **/
 
 /**section expérience**/
 
 .desc-miss {
-	
-	width:600px;
-	margin:auto;
+	list-style-image: url('images/puce4.png');
 }
 
 .date {
@@ -209,21 +185,17 @@ main h2 {
 .mission {
 	font-family:'caviar_dreamsbold';
 	color:#0f056b;
-
 }
 
-.sous-rubrique-experiences ul {
+.exp {
 	list-style:none;
-	padding-right: 40px;
-	
+	padding:0px;
 }
-
 
 .sous-rubrique-experiences {
 	text-align: justify;
 	width:70%;
 	margin:auto;
-	padding-top:10px;
 }
 
 .desc-exp {
@@ -234,9 +206,6 @@ main h2 {
 	text-align: justify;
 	width:70%;
 	margin:auto;
-	padding-top:10px;
-	padding-bottom:10px;
-
  }
 
  .sous-rubrique-sco a:visited {
@@ -244,44 +213,25 @@ main h2 {
  }
 
  .sous-rubrique-sco a:hover /**liens survolés**/ {
-	color:#53626e;
+	color:#6f87ff;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
 .ul-sco {
 	list-style:none;
-
-}
-
-.sous-rubrique-sco li {
-	padding-top:10px;
-}
-
-.sous-rubrique-langues ul {
-	list-style: none;
-}
-.sous-rubrique-langues li {
-	padding-top:10px;
-}
-
-.sous-rurbique-langues {
-	size:300px;
 }
 
 .langue{
-	background: url('images/logogb.png') no-repeat;
+	list-style-image: url('images/logogb.png');
 }
 
-
 .office {
-	background: url('images/office.png') no-repeat;
-	background-position:380px;
+	list-style-image: url('images/office.png');
 }
 
 .html {
-	background: url('images/html.png') no-repeat;
-	background-position:370px;
+	list-style-image: url('images/html.png');
 }
 
 .sous-rubrique-langues, .sous-rubrique-loisirs {
@@ -290,34 +240,22 @@ main h2 {
 	margin:auto;
  }
  
- .sous-rubrique-loisirs ul {
- 	list-style:none;
- }
- .sous-rubrique-loisirs li {
- 	padding:10px;
- }
-
  .music {
- 	background: url('images/head.png') no-repeat;
- 	background-position: 350px;
+ 	list-style-image: url('images/head.png')
  }
 
 .lecture {
-	background: url('images/book.png') no-repeat;
- 	background-position: 400px;
+	list-style-image: url('images/book.png');
 }
 
 .cine {
-	background: url('images/cine.png') no-repeat;
-	background-position: 400px;	
+	list-style-image: url('images/cine.png');
 }
 
 
 
 audio {
-	width:30%;
-	border: 2px solid #0f056b;
-	border-radius: 20px;
+	width:20%;
 }
 
 figure,  {
@@ -325,3 +263,6 @@ figure,  {
 	margin: auto;
 }
 
+.design3{
+	max-width: 100%;
+}
